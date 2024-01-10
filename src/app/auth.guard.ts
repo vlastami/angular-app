@@ -1,5 +1,3 @@
-// src/app/auth.guard.ts
-
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { KeycloakService } from 'keycloak-angular';

@@ -1,5 +1,3 @@
-// angular-app/src/app/app.component.ts
-
 import { Component } from '@angular/core';
 import { AuthService } from './auth.service';
 import { CommonModule } from '@angular/common';
@@ -24,6 +22,6 @@ export class AppComponent {
   }
 
   logout() {
-    this.authService.doLogout();
+    this.authService.logout();
   }
 }

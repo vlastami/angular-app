@@ -1,4 +1,3 @@
-// angular-app/src/app/auth.service.ts
 import { Injectable } from '@angular/core';
 import { KeycloakService, KeycloakOptions } from 'keycloak-angular';
 import { keycloakConfig } from '../environments/keycloak.config';
@@ -20,8 +19,6 @@ export class AuthService {
       },
     };
 
-  
-
     try {
       await this.keycloakService.init(options);
       console.log('Keycloak initialized successfully');
@@ -41,7 +38,7 @@ export class AuthService {
     }
   }
 
-  async doLogout(): Promise<void> {
+  async logout(): Promise<void> {
     await this.keycloakService.logout(window.location.origin);
   }
 
